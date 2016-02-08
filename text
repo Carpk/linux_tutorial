@@ -1,0 +1,24 @@
+The first command we will play with is the `uname` command. This command displays system information of the device you are on. Such as kernel name, kernal release date, kernal version, nodename, processor type, hardware type, and the operating system.
+
+You can use `uname` all by itself, but we will use the `-a`(all) option with it and sending the output data to its own file `> sysinfo`
+
+`uname -a > sysinfo`
+
+There are multiple ways to read a file, `cat` will surfice here:
+
+`cat sysinfo`
+
+We created a file to play with, `sed` is a streaming editor that you can use regex to change text in your file
+
+`sed 's/64/Nachos' sysinfo`
+
+This will only replace the first set of characters on a single line, add the `g` to replace them all on the same line
+
+`sed 's/64/Nachos/g' sysifo`
+
+These commands have been outputting to the terminal, but we can redirect it to its own file
+n
+`sed 's/64/Nachos' sysinfo > modinfo`
+
+
+`grep Bob /pub/phonelist`
