@@ -22,3 +22,22 @@ n
 
 
 `grep Bob /pub/phonelist`
+
+
+`man grep > grep_man`
+
+grep -r 'word'
+
+sudo adduser test
+
+su test
+
+touch filename
+
+chmod 777 filename
+
+exit
+
+rm filename
+
+dropuser test
