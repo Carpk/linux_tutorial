@@ -34,10 +34,17 @@ su test
 
 touch filename
 
+ll
+
 chmod 777 filename
 
 exit
 
 rm filename
 
-dropuser test
+userdel test
+
+telnet localhost 3000
+
+GET /index.html HTTP/1.1
+
